@@ -1,0 +1,6 @@
+    ! matrix storage modes, these should be defined and implemented in external library
+#if defined(QCMATRIX_64BIT_INTEGER)
+    integer(kind=8), parameter :: UNKNOWN_STORAGE_MODE = 0
+#else
+    integer(kind=4), parameter :: UNKNOWN_STORAGE_MODE = 0
+#endif

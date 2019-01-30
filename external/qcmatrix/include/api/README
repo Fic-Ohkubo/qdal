@@ -1,0 +1,6 @@
+It would be better that we have several small h90 files than one single
+qcmatrix_f_api.h90, so that the external matrix library could choose to
+include some of these small h90 files.
+
+The configuration settings of QcMatrix are in the file qcmatrix_config.h,
+for instance QCMATRIX_SINGLE_PRECISION.

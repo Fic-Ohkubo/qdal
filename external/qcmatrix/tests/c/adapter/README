@@ -1,0 +1,21 @@
+Simple example to show how to use external C matrix library (square block real, complex
+or real) in QcMatrix.
+
+(1) Copies header files and source codes:
+    export PATH_LIB_QCMATRIX=where_QcMatrix_is
+    ./init_c_adapter.sh
+(2) Creates a build directory:
+    mkdir build
+    cd build
+(3) CMake procedure (setting corresponding parameters):
+    ccmake ..
+(4) make
+(5) QcMatrix CMake procedure:
+    LANG_C_HEADER = "where_QcMatrix_is/tests/c/adapter/include/impls/real_mat.h" or
+                    "where_QcMatrix_is/tests/c/adapter/include/impls/cmplx_mat.h" or
+                    "where_QcMatrix_is/tests/c/adapter/include/impls/block_real.h"
+    LANG_C_MATRIX = Matrix_
+    QCMATRIX_EXTERNAL_LIBRARIES = -ladapter_matrix
+    QCMATRIX_EXTERNAL_PATH = where_QcMatrix_is/tests/c/adapter/build
+(6) Cleans the adapter
+    ./clean_c_adapter.sh

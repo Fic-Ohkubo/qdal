@@ -1,0 +1,8 @@
+    ! duplicate option when calling \fn(QcMatDuplicate)
+#if defined(QCMATRIX_64BIT_INTEGER)
+    integer(kind=8), parameter :: COPY_PATTERN_ONLY = 0
+    integer(kind=8), parameter :: COPY_PATTERN_AND_VALUE = 1
+#else
+    integer(kind=4), parameter :: COPY_PATTERN_ONLY = 0
+    integer(kind=4), parameter :: COPY_PATTERN_AND_VALUE = 1
+#endif

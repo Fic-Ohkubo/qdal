@@ -1,0 +1,8 @@
+!! list of user-visible changes worth mentioning, keep old items after the newer ones
+!! or move some older items into ONEWS when NEWS gets long refer the user to ONEWS at the end
+
+Version 0.1.0
+========================================================================
+* CHANGE name changed as QcMatrix
+* NEW will be released under the GNU Lesser General Public License
+

@@ -1,0 +1,8 @@
+#include "qcmatrix_config.h"
+
+#if defined(QCMATRIX_BLAS_64BIT)
+    integer(kind=4), parameter :: QBLAS_INT = 8
+#else
+    integer(kind=4), parameter :: QBLAS_INT = 4
+#endif
+    integer(kind=QBLAS_INT), parameter :: QBLAS_INT_MAX = huge(1_QBLAS_INT)

@@ -1,0 +1,20 @@
+!! Give future long- and short-term developments
+
+Short-term:
+* Test QcMatGetExternalMat() and QcMatSetExternalMat() in C.
+* Test different adapters.
+* Figure out an easy way to add new functions (every time adding a new function,
+  header files, source codes, adapters, APIs, tests, make files and documentation
+  to be updated).
+* Using QcMatrix in TDRsp and OpenRsp.
+* $\Delta$SCF.
+* Using QcMatrix in Gen1Int.
+
+Long-term:
+* Test different external matrix libraries.
+* Use Mini-XML library for reading and writing in ASCII format
+* Considering the use of matrix symmetry for the blocks.
+* Using Eigen as the default matrix library.
+* Considering molecular symmetry?
+* Python APIs.
+
