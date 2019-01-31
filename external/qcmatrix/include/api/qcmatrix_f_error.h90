@@ -1,0 +1,3 @@
+    ! for returning error code from functions
+    integer(kind=4), parameter :: QSUCCESS = 0
+    integer(kind=4), parameter :: QFAILURE = 1

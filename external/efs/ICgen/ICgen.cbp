@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="ICgen" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="../K4Mgen" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="../K4Mgen" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option parameters="3" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-fopenmp -march=native" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-fopenmp" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="../math/angular.cpp" />
+		<Unit filename="IICgen.cpp" />
+		<Unit filename="IICgen.hpp" />
+		<Unit filename="IICgen_RRs.cpp" />
+		<Unit filename="IICwrite.cpp" />
+		<Unit filename="QICgen.cpp" />
+		<Unit filename="QICgen.hpp" />
+		<Unit filename="SKS.cpp" />
+		<Unit filename="SKS.hpp" />
+		<Unit filename="integrals.cpp" />
+		<Unit filename="integrals.hpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

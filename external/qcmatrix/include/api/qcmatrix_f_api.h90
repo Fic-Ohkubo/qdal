@@ -1,0 +1,21 @@
+! parameters defined in files:
+! * include/utilities/qcmatrix_error.h
+! * include/types/qcmatrix_basic_types.h
+! * include/types/qcmatrix_mat_types.h
+! that will be used in Fortran APIs
+
+#include "qcmatrix_config.h"
+
+#include "api/qcmatrix_f_error.h90"
+#include "api/qcmatrix_f_boolean.h90"
+#include "api/qcmatrix_f_basic.h90"
+#include "api/qcmatrix_f_mat_symmetry.h90"
+#include "api/qcmatrix_f_mat_data.h90"
+#if defined(QCMATRIX_STORAGE_MODE)
+#include "api/qcmatrix_f_mat_storage.h90"
+#endif
+#include "api/qcmatrix_f_mat_duplicate.h90"
+#include "api/qcmatrix_f_mat_operations.h90"
+#if defined(QCMATRIX_ENABLE_VIEW)
+#include "api/qcmatrix_f_mat_view.h90"
+#endif

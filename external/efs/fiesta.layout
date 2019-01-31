@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Ratlas" />
+	<File name="fiesta/fiesta.cpp" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2063" topLine="92" />
+		</Cursor>
+		<Folding>
+			<Collapse line="95" />
+			<Collapse line="155" />
+		</Folding>
+	</File>
+	<File name="math/ortho.cpp" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="14486" topLine="504" />
+		</Cursor>
+	</File>
+	<File name="hf/iguess.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3491" topLine="66" />
+		</Cursor>
+		<Folding>
+			<Collapse line="38" />
+			<Collapse line="94" />
+		</Folding>
+	</File>
+	<File name="basis/shellpair.hpp" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="536" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="basis/atomdef.hpp" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="82" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="basis/GTO.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="766" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="molecule/system.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="326" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="molecule/molecule.cpp" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="9300" topLine="130" />
+		</Cursor>
+		<Folding>
+			<Collapse line="28" />
+			<Collapse line="38" />
+			<Collapse line="43" />
+			<Collapse line="66" />
+			<Collapse line="73" />
+			<Collapse line="84" />
+			<Collapse line="95" />
+			<Collapse line="112" />
+			<Collapse line="132" />
+		</Folding>
+	</File>
+	<File name="math/angular.hpp" open="0" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1715" topLine="33" />
+		</Cursor>
+		<Folding>
+			<Collapse line="16" />
+		</Folding>
+	</File>
+	<File name="molecule/edata.hpp" open="0" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="731" topLine="42" />
+		</Cursor>
+	</File>
+	<File name="low/cache64.hpp" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="5470" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="13" />
+			<Collapse line="23" />
+			<Collapse line="126" />
+			<Collapse line="131" />
+			<Collapse line="136" />
+			<Collapse line="143" />
+			<Collapse line="151" />
+			<Collapse line="158" />
+			<Collapse line="165" />
+			<Collapse line="173" />
+			<Collapse line="180" />
+			<Collapse line="192" />
+			<Collapse line="202" />
+			<Collapse line="294" />
+			<Collapse line="301" />
+			<Collapse line="316" />
+			<Collapse line="321" />
+			<Collapse line="326" />
+			<Collapse line="333" />
+			<Collapse line="341" />
+			<Collapse line="348" />
+			<Collapse line="356" />
+			<Collapse line="364" />
+			<Collapse line="371" />
+			<Collapse line="381" />
+			<Collapse line="391" />
+			<Collapse line="506" />
+			<Collapse line="511" />
+			<Collapse line="515" />
+			<Collapse line="522" />
+			<Collapse line="527" />
+			<Collapse line="534" />
+			<Collapse line="541" />
+			<Collapse line="548" />
+			<Collapse line="555" />
+		</Folding>
+	</File>
+	<File name="math/tensors.hpp" open="0" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="252" topLine="22" />
+		</Cursor>
+		<Folding>
+			<Collapse line="29" />
+		</Folding>
+	</File>
+	<File name="basis/atomdef.cpp" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="242" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="../docs/TODO.txt" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="340" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="integrals/prescreen.cpp" open="0" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="13212" topLine="307" />
+		</Cursor>
+	</File>
+	<File name="fiesta/calculate.hpp" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1102" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="low/memblock.hpp" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="6880" topLine="247" />
+		</Cursor>
+	</File>
+	<File name="hf/HF.cpp" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1396" topLine="32" />
+		</Cursor>
+	</File>
+	<File name="integrals/1electron.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="72" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="13" />
+			<Collapse line="22" />
+			<Collapse line="35" />
+			<Collapse line="48" />
+			<Collapse line="56" />
+			<Collapse line="64" />
+			<Collapse line="73" />
+		</Folding>
+	</File>
+	<File name="math/smath.hpp" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="406" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="math/affine.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2981" topLine="124" />
+		</Cursor>
+	</File>
+	<File name="low/plotters.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="587" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="molecule/edata.cpp" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="9478" topLine="259" />
+		</Cursor>
+		<Folding>
+			<Collapse line="26" />
+			<Collapse line="39" />
+			<Collapse line="46" />
+			<Collapse line="191" />
+			<Collapse line="194" />
+		</Folding>
+	</File>
+	<File name="math/newtensors.cpp" open="0" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1719" topLine="39" />
+		</Cursor>
+		<Folding>
+			<Collapse line="15" />
+			<Collapse line="19" />
+			<Collapse line="25" />
+			<Collapse line="26" />
+			<Collapse line="27" />
+			<Collapse line="28" />
+			<Collapse line="29" />
+		</Folding>
+	</File>
+	<File name="low/less.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="346" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="fiesta/fiesta.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="79" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="low/io.hpp" open="0" top="0" tabpos="12" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="141" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="low/strings.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="248" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="low/chrono.hpp" open="0" top="0" tabpos="13" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="335" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="../docs/manual.txt" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="88" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="math/eigen.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="211" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="low/mem.hpp" open="0" top="0" tabpos="15" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="239" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="low/io.cpp" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3970" topLine="33" />
+		</Cursor>
+		<Folding>
+			<Collapse line="31" />
+		</Folding>
+	</File>
+	<File name="hf/DMsolve.cpp" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="616" topLine="7" />
+		</Cursor>
+		<Folding>
+			<Collapse line="51" />
+			<Collapse line="62" />
+			<Collapse line="71" />
+			<Collapse line="78" />
+		</Folding>
+	</File>
+	<File name="basis/GTO.cpp" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="6789" topLine="105" />
+		</Cursor>
+		<Folding>
+			<Collapse line="37" />
+			<Collapse line="71" />
+			<Collapse line="92" />
+			<Collapse line="173" />
+			<Collapse line="228" />
+			<Collapse line="323" />
+		</Folding>
+	</File>
+	<File name="math/newtensors.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="968" topLine="36" />
+		</Cursor>
+	</File>
+	<File name="../docs/changelog.txt" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1572" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="molecule/atoms.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1129" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="11" />
+		</Folding>
+	</File>
+	<File name="low/plotters.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="285" topLine="9" />
+		</Cursor>
+		<Folding>
+			<Collapse line="17" />
+			<Collapse line="28" />
+			<Collapse line="33" />
+			<Collapse line="45" />
+		</Folding>
+	</File>
+	<File name="integrals/1electron.cpp" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="41104" topLine="1045" />
+		</Cursor>
+		<Folding>
+			<Collapse line="40" />
+			<Collapse line="58" />
+			<Collapse line="113" />
+			<Collapse line="130" />
+			<Collapse line="135" />
+			<Collapse line="143" />
+			<Collapse line="242" />
+		</Folding>
+	</File>
+	<File name="molecule/molecule.hpp" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="481" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="basis/SPprototype.hpp" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="858" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="low/MPIwrap.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="23" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="molecule/atoms.cpp" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="274" topLine="12" />
+		</Cursor>
+		<Folding>
+			<Collapse line="20" />
+		</Folding>
+	</File>
+	<File name="fiesta/calculate.cpp" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="6012" topLine="150" />
+		</Cursor>
+		<Folding>
+			<Collapse line="65" />
+			<Collapse line="73" />
+			<Collapse line="177" />
+			<Collapse line="181" />
+			<Collapse line="185" />
+		</Folding>
+	</File>
+	<File name="integrals/prescreen.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="9002" topLine="272" />
+		</Cursor>
+	</File>
+	<File name="libquimera/libquimera.hpp" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="7024" topLine="40" />
+		</Cursor>
+		<Folding>
+			<Collapse line="49" />
+			<Collapse line="87" />
+			<Collapse line="124" />
+			<Collapse line="136" />
+			<Collapse line="168" />
+		</Folding>
+	</File>
+	<File name="fiesta/defs.hpp" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1450" topLine="13" />
+		</Cursor>
+	</File>
+	<File name="low/strings.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="229" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="molecule/system.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="904" topLine="37" />
+		</Cursor>
+		<Folding>
+			<Collapse line="111" />
+			<Collapse line="132" />
+		</Folding>
+	</File>
+	<File name="integrals/atomprod.hpp" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1453" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="44" />
+		</Folding>
+	</File>
+	<File name="low/chrono.cpp" open="0" top="0" tabpos="14" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="578" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="hf/DMsolve.hpp" open="0" top="0" tabpos="19" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="121" topLine="2" />
+		</Cursor>
+	</File>
+	<File name="libechidna/libechidna.hpp" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="math/gamma.hpp" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1573" topLine="27" />
+		</Cursor>
+	</File>
+</CodeBlocks_layout_file>

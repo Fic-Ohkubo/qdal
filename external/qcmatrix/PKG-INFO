@@ -1,0 +1,16 @@
+Metadata-Version: 1.0
+Name: QcMatrix
+Version: 0.1.0
+Summary: an abstract matrix library
+Home-page: https://gitlab.com/bingao/qcmatrix
+Author: Bin Gao
+Author-email: bin.gao@uit.no
+License: LGPLv3
+Description: QcMatrix is an ``abstract'' matrix library written in C
+   language (with C++ and Fortran interface), and provides a special
+   square block complex matrix (all the blocks are square matrix with
+   the same dimension) and corresponding functions. It can be built
+   on top of exteranl C, C++ or Fortran libraries, which have implemented
+   either square block complex matrix, square block real matrix,
+   complex matrix or real matrix and required functions.
+Platform: Windows, Unix, MacOS

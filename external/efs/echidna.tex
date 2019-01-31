@@ -1,0 +1,126 @@
+\documentclass[a4paper,11pt]{paper}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+
+\title{The Echidna Fock Solver}
+\author{Jaime Axel Rosal Sandberg}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\begin{abstract}
+A very short manual for the Echidna Fock Solver.
+
+\end{abstract}
+
+\section{Description}
+
+The Echinda Fock Solver is a library to compute the Coulomb and Exchange matrices required for SCF computations such as Hartree-Fock and Density Functional Theory. Its performance is tuned for modern CPU architectures, using efficient caching and other optimization techniques as well as SSE vectorization. The computation is parallelized both at OpenMP level (symmetric multithreading) and MPI.
+
+The library is written mostly in C++. Some of the most computationally intensive parts of the library are either metaprogrammed (using C++ templates or automatic code generation) or interpret automatically generated code.
+
+Even though the library's ERI algorithms are extensible, the current version only implements the K4+MIRROR algorithm \cite{K4M} with a few refinements \cite{CDR}. Please, make sure to cite the original paper if you use it in your own research. 
+
+At the moment, the library implements a rotation-invariant technique for prescreening 2-electron integrals based on Frobenius norm which significantly accelerates the evaluation of Coulomb and Exchange matrices for large systems.
+
+\section{Usage}
+
+Before using the library, it is necessary to use the QIC (Quimera Interpreted Code) generator:
+
+\begin{verbatim}
+QICgen L <qicdir> <k2cdir>
+\end{verbatim}
+
+This will generate all necessary extra files for integrals up to angular momentum L. <qicdir> is the path where the interpreted code files for the K4+MIRROR code will be generated and <k2cdir> specifies where the path where the source code for specialized innermost K4 contraction routines lie.
+
+Using the library within the code is fairly simple. Most of the library's functionality is encapsulated in four basic functions, and communication can be done with few data structures.
+
+Also, make sure both LibAngular and LibGamma are initialized. This can be accomplished in a single step with a call to LibQuimera::InitLibQuimera(). 
+
+The following three functions are needed to complete different steps of initialization, and the last one to compute the two-electron contribution during the SCF procedure itself.
+
+\begin{verbatim}
+void Echidna::Init (const rAtom * Atoms, int nAtoms);
+\end{verbatim}
+
+Initializes inner atom lists, elemental basis parameters and block matrix structures. It only requires an array of rAtom objects, as defined in the header.
+
+\begin{verbatim}
+void Echidna::ComputeAtomPairs (const r2tensor<int> & AtomPairs, double logGDO);
+\end{verbatim}
+
+Initializes inner information of basis set products. It requires as input a list of every atom within interacting (overlapping) distance for each given atom and minus the logarithm of  gaussian overlap threshold (for primitive pair screening). The first parameter needs only has to be an upper bound, since prescreening will get rid of non-overlapping basis.
+
+\begin{verbatim}
+void Echidna::InitFock2e (double Xscaling=1.);
+\end{verbatim}
+
+Initializes the memory, matrices and parameters required for the Fock solver itself and computes Cauchy-Schwarz parameters. The argument can be left void for Hartree-Fock, or set to whatever fraction of the exact exchange energy is required for a given DFT functional (0 computes Coulomb only).
+
+\begin{verbatim}
+void Echidna::FockUpdate (tensor2 & F, const tensor2 & D, double Dthresh, double Sthresh);
+\end{verbatim}
+
+Outputs the contribution to the Fock matrix in F, given a density matrix D and a prescreening threshold Dthresh. It is possible, with little modification, to use the last parameter Sthresh to set a second threshold so integrals with expected contrbutions between Dthresh and Sthresh will be computed in single precision, but at the moment this feature is only experimental
+
+
+\section{Library Limitations}
+
+The current version is limited to a maximum number of 32 primitives per function and 8 generally contracted functions per angular momentum. The maximum usable angular momentum is 4 (g-functions), although angular momentums up to 5 (h functions) can be used with little modification.
+
+The library requires x86 hardware capable of SSE2 vector instructions.
+
+If running in parallel, the optimal configuration is to launch a single MPI thread per node (or CPU socket) and make sure OpenMP is configured to as many threads as CPU cores (or hardware threads) per node (or socket).
+
+
+\section{Using the Library with DALTON}
+
+An interface to translate the data structures used in DALTON and to wrap the function calls to the library is provided. In order to function properly, it requires that the Dalton script sets three environment variables: \\    
+
+\begin{description}
+    \item[QIC\_DIR] Path to the directory where the automatically generated QIC files exist. This is by default {\it path-to-DALTON-instalation/qic}.
+    \item[EFS\_MEM\_MB] Memory available for storage of intermediate integrals during computation. Even when relatively low values will be enough in many cases, note that this memory is to be divided between all the working threads, and that the need of memory for generally contracted basis sets might increase steeply with the number of basis functions, as the memory requirement scales as $O(L^5 J^4)$, with $L$ being the angular momentum and $J$ the number of functions.
+    \item[EFS\_BUFFER\_MB] Shared memory for inter-thread communication. This value is rarely important unless it is set too low. Half to one Gb of memory should be more than enough for modern architectures.
+\end{description}
+
+Additionally, because the library uses hybrid parallelization, it is a good idea to run only one MPI process per node/socket and change the number of threads in the Dalton script to the number of hardware threads of your system.
+
+\begin{description}
+    \item[OMP\_NUM\_THREADS] Number of hardware threads per CPU socket in the system.
+\end{description}
+
+To perform a computation using the EFS, use:
+
+\begin{verbatim}
+    **INTEGRALS
+    *TWOINT
+    .K4MIRROR
+\end{verbatim}
+
+in the {\it .dal} file.
+
+
+Please, understand that although the library has been extensively tested numerically, the code is still experimental. Take into account that:
+
+\begin{itemize}
+  \item At the moment it is only possible to use the library in DALTON to solve Hartree Fock and DFT SCF equations. Calculation of properties will follow. 
+  \item Automatic detection of molecular symmetry must be disabled. 
+  \item If user-defined basis sets with mixed general and segmented contraction functions for a given angular momentum, make sure that the coefficients of similar generally contracted functions are contiguous in the basis set file to obtain maximal performance.
+\end{itemize}
+
+
+\begin{thebibliography}{99}
+
+\bibitem{K4M} An algorithm for the efficient evaluation of two-electron repulsion integrals over contracted Gaussian-type basis functions, \\ Jaime Axel Rosal Sandberg, Zilvinas Rinkevicius, J. Chem. Phys. 137, 234105 (2012); http://dx.doi.org/10.1063/1.4769730
+
+\bibitem{CDR} New recurrence relations for analytic evaluation of two-electron repulsion integrals over highly contracted gaussian-type orbitals, \\ Jaime Axel Rosal Sandberg, Zilvinas Rinkevicius, In preparation
+
+\end{thebibliography}
+
+\end{document}
+
+
+An algorithm for the efficient evaluation of two-electron repulsion integrals over contracted Gaussian-type basis functions 

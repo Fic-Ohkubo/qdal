@@ -1,0 +1,36 @@
+# Source codes of the complex matrix
+SET(QCMATRIX_SRCS
+    ${QCMATRIX_SRCS}
+    ${LIB_QCMATRIX_PATH}/src/cmplx_mat/CmplxMatCreate.c
+    ${LIB_QCMATRIX_PATH}/src/cmplx_mat/CmplxMatSetSymType.c
+    ${LIB_QCMATRIX_PATH}/src/cmplx_mat/CmplxMatSetDataType.c
+    ${LIB_QCMATRIX_PATH}/src/cmplx_mat/CmplxMatSetDimMat.c
+    ${LIB_QCMATRIX_PATH}/src/cmplx_mat/CmplxMatAssemble.c
+    ${LIB_QCMATRIX_PATH}/src/cmplx_mat/CmplxMatGetSymType.c
+    ${LIB_QCMATRIX_PATH}/src/cmplx_mat/CmplxMatGetDataType.c
+    ${LIB_QCMATRIX_PATH}/src/cmplx_mat/CmplxMatGetDimMat.c
+    ${LIB_QCMATRIX_PATH}/src/cmplx_mat/CmplxMatIsAssembled.c
+    ${LIB_QCMATRIX_PATH}/src/cmplx_mat/CmplxMatSetValues.c
+    ${LIB_QCMATRIX_PATH}/src/cmplx_mat/CmplxMatAddValues.c
+    ${LIB_QCMATRIX_PATH}/src/cmplx_mat/CmplxMatGetValues.c
+    ${LIB_QCMATRIX_PATH}/src/cmplx_mat/CmplxMatDuplicate.c
+    ${LIB_QCMATRIX_PATH}/src/cmplx_mat/CmplxMatZeroEntries.c
+    ${LIB_QCMATRIX_PATH}/src/cmplx_mat/CmplxMatGetTrace.c
+    ${LIB_QCMATRIX_PATH}/src/cmplx_mat/CmplxMatGetMatProdTrace.c
+    ${LIB_QCMATRIX_PATH}/src/cmplx_mat/CmplxMatDestroy.c
+    ${LIB_QCMATRIX_PATH}/src/cmplx_mat/CmplxMatScale.c
+    ${LIB_QCMATRIX_PATH}/src/cmplx_mat/CmplxMatAXPY.c
+    ${LIB_QCMATRIX_PATH}/src/cmplx_mat/CmplxMatTranspose.c
+    ${LIB_QCMATRIX_PATH}/src/cmplx_mat/CmplxMatGEMM.c)
+IF(QCMATRIX_STORAGE_MODE)
+    SET(QCMATRIX_SRCS
+        ${QCMATRIX_SRCS}
+        ${LIB_QCMATRIX_PATH}/src/cmplx_mat/CmplxMatSetStorageMode.c
+        ${LIB_QCMATRIX_PATH}/src/cmplx_mat/CmplxMatGetStorageMode.c)
+ENDIF()
+IF(QCMATRIX_ENABLE_VIEW)
+    SET(QCMATRIX_SRCS
+        ${QCMATRIX_SRCS}
+        ${LIB_QCMATRIX_PATH}/src/cmplx_mat/CmplxMatWrite.c
+        ${LIB_QCMATRIX_PATH}/src/cmplx_mat/CmplxMatRead.c)
+ENDIF()

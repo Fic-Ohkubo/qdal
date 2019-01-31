@@ -1,0 +1,259 @@
+# depslib dependency file v1.0
+1378093317 source:/home/jaime/dalton/external/k4mirror/ICgen/main.cpp
+	<iostream>
+	<queue>
+	"../2eints/IICint.hpp"
+	"../2eints/quimera.hpp"
+	"../math/angular.hpp"
+	<omp.h>
+
+1377701888 source:/home/jaime/dalton/external/k4mirror/2eints/integrals.cpp
+	"integrals.hpp"
+
+1377701888 /home/jaime/dalton/external/k4mirror/2eints/integrals.hpp
+	<set>
+	<map>
+	<iostream>
+	"../fiesta/defs.hpp"
+
+1378217401 /home/jaime/dalton/external/k4mirror/fiesta/defs.hpp
+
+1378217401 source:/home/jaime/dalton/external/k4mirror/2eints/IICgen.cpp
+	<fstream>
+	<map>
+	<set>
+	<list>
+	<vector>
+	<cstdlib>
+	<string>
+	<queue>
+	"../2eints/IICgen.hpp"
+	"../math/angular.hpp"
+	"../low/chrono.hpp"
+	"../low/cache.hpp"
+
+1377701888 /home/jaime/dalton/external/k4mirror/2eints/IICgen.hpp
+	<set>
+	<list>
+	<iostream>
+	"integrals.hpp"
+	"../fiesta/defs.hpp"
+
+1378427592 /home/jaime/dalton/external/k4mirror/math/angular.hpp
+	"../defs.hpp"
+
+1378424532 /home/jaime/dalton/external/k4mirror/low/chrono.hpp
+	<ostream>
+	<sys/time.h>
+
+1378425753 /home/jaime/dalton/external/k4mirror/low/cache.hpp
+	"../defs.hpp"
+
+1378217401 source:/home/jaime/dalton/external/k4mirror/2eints/IICgen_RRs.cpp
+	<fstream>
+	<map>
+	<set>
+	<list>
+	<vector>
+	<cstdlib>
+	<string>
+	<queue>
+	"../2eints/IICgen.hpp"
+	"../math/angular.hpp"
+	"../low/chrono.hpp"
+	"../low/cache.hpp"
+
+1377701888 source:/home/jaime/dalton/external/k4mirror/2eints/SKS.cpp
+	"integrals.hpp"
+	<set>
+
+1377701888 source:/home/jaime/dalton/external/k4mirror/2eints/VILIC.cpp
+	"VILIC.hpp"
+	"IICint.hpp"
+
+1378429061 /home/jaime/dalton/external/k4mirror/2eints/VILIC.hpp
+	"../defs.hpp"
+
+1378224156 /home/jaime/dalton/external/k4mirror/2eints/IICint.hpp
+	<cstdlib>
+	<string>
+	<fstream>
+	"../fiesta/defs.hpp"
+	"../low/chrono.hpp"
+	"../libquimera/libquimera.hpp"
+	"integrals.hpp"
+	"VILIC.hpp"
+
+1378427644 /home/jaime/dalton/external/k4mirror/libquimera/libquimera.hpp
+	<cstdlib>
+	<string>
+	"../low/plotters.hpp"
+	"../defs.hpp"
+
+1378424582 /home/jaime/dalton/external/k4mirror/low/plotters.hpp
+	<iostream>
+	<fstream>
+	<string>
+	<stdio.h>
+	<stack>
+	<cmath>
+	"../low/chrono.hpp"
+	"../low/MPIwrap.hpp"
+
+1378426853 /home/jaime/dalton/external/k4mirror/low/MPIwrap.hpp
+
+1378427658 /home/jaime/dalton/external/k4mirror/2eints/quimera.hpp
+	<map>
+	<queue>
+	"../defs.hpp"
+	"../libquimera/libquimera.hpp"
+	"../2eints/IICinit.hpp"
+
+1378048150 source:/home/jaime/dalton/external/k4mirror/2eints/IICint.cpp
+	<iostream>
+	<set>
+	"../fiesta/defs.hpp"
+	"../libquimera/libquimera.hpp"
+	"../low/io.hpp"
+	"../basis/SPprototype.hpp"
+	"../2eints/IICint.hpp"
+	"../2eints/quimera.hpp"
+	"../math/angular.hpp"
+	"../2eints/IICgen.hpp"
+	"../2eints/k2c/K2C.hpp"
+	"SKS.hpp"
+	<omp.h>
+
+1377701888 /home/jaime/dalton/external/k4mirror/low/io.hpp
+	<iostream>
+	<fstream>
+	<string>
+	<stdio.h>
+	<cmath>
+	"../low/mem.hpp"
+
+1377701888 /home/jaime/dalton/external/k4mirror/low/mem.hpp
+	<iostream>
+	<set>
+	<omp.h>
+
+1377701888 /home/jaime/dalton/external/k4mirror/basis/SPprototype.hpp
+	"../fiesta/defs.hpp"
+	"../low/mem.hpp"
+
+1377701888 /home/jaime/dalton/external/k4mirror/2eints/k2c/K2C.hpp
+
+1377701888 /home/jaime/dalton/external/k4mirror/2eints/SKS.hpp
+	<set>
+	"../fiesta/defs.hpp"
+
+1378429015 source:/home/jaime/dalton/external/k4mirror/math/angular.cpp
+	<cmath>
+	<iostream>
+	"../defs.hpp"
+	"../math/angular.hpp"
+	"../math/affine.hpp"
+
+1378425037 /home/jaime/dalton/external/k4mirror/math/affine.hpp
+	<cmath>
+	<iostream>
+
+1377701888 /home/jaime/dalton/external/k4mirror/low/strings.hpp
+	<string>
+
+1378225382 source:/home/jaime/dalton/external/k4mirror/2eints/IICwrite.cpp
+	<iostream>
+	<set>
+	"../fiesta/defs.hpp"
+	"../2eints/IICint.hpp"
+	"../math/angular.hpp"
+	"../2eints/IICgen.hpp"
+	"../2eints/SKS.hpp"
+	"../ICgen/QICgen.hpp"
+
+1378426585 source:/home/jaime/dalton/external/k4mirror/ICgen/QICgen.cpp
+	<iostream>
+	<queue>
+	<string>
+	"../2eints/IICinit.hpp"
+	"../2eints/quimera.hpp"
+	"../math/angular.hpp"
+	<omp.h>
+
+1378425962 /home/jaime/dalton/external/k4mirror/ICgen/QICgen.hpp
+	<string>
+
+1378423655 /home/jaime/dalton/external/k4mirror/defs.hpp
+
+1378426585 source:/home/jaime/dalton/external/k4mirror/ICgen/IICgen.cpp
+	<fstream>
+	<map>
+	<set>
+	<list>
+	<vector>
+	<cstdlib>
+	<string>
+	<queue>
+	"IICgen.hpp"
+	"../math/angular.hpp"
+	"../low/chrono.hpp"
+	"../low/cache.hpp"
+
+1378429168 /home/jaime/dalton/external/k4mirror/ICgen/IICgen.hpp
+	<set>
+	<list>
+	<iostream>
+	"../defs.hpp"
+	"integrals.hpp"
+	"../2eints/IICinit.hpp"
+
+1378426585 /home/jaime/dalton/external/k4mirror/ICgen/integrals.hpp
+	<set>
+	<map>
+	<iostream>
+	"../defs.hpp"
+
+1378426585 source:/home/jaime/dalton/external/k4mirror/ICgen/IICgen_RRs.cpp
+	<fstream>
+	<map>
+	<set>
+	<list>
+	<vector>
+	<cstdlib>
+	<string>
+	<queue>
+	"IICgen.hpp"
+	"../math/angular.hpp"
+	"../low/chrono.hpp"
+	"../low/cache.hpp"
+
+1378425962 source:/home/jaime/dalton/external/k4mirror/ICgen/integrals.cpp
+	"integrals.hpp"
+
+1378428894 /home/jaime/dalton/external/k4mirror/2eints/IICinit.hpp
+	<cstdlib>
+	<string>
+	<fstream>
+	"../defs.hpp"
+	"../low/chrono.hpp"
+	"../libquimera/libquimera.hpp"
+	"VILIC.hpp"
+
+1378425962 source:/home/jaime/dalton/external/k4mirror/ICgen/SKS.cpp
+	"integrals.hpp"
+	<set>
+
+1378426585 source:/home/jaime/dalton/external/k4mirror/ICgen/IICwrite.cpp
+	<iostream>
+	<set>
+	"../defs.hpp"
+	"IICgen.hpp"
+	"SKS.hpp"
+	"../2eints/IICinit.hpp"
+	"../math/angular.hpp"
+	"../ICgen/QICgen.hpp"
+
+1378426023 /home/jaime/dalton/external/k4mirror/ICgen/SKS.hpp
+	<set>
+	"../defs.hpp"
+

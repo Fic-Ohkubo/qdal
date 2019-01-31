@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="quimera" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="../quimera-debug" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj/Debug/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option parameters="inputs/nylon.xyz " />
+				<Compiler>
+					<Add option="-pg" />
+					<Add option="-g" />
+					<Add option="-fopenmp -march=native" />
+				</Compiler>
+				<Linker>
+					<Add option="-pg" />
+					<Add option="-ldl" />
+					<Add option="-fopenmp" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="../quimera" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj/Release/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option parameters="inputs/nylon.xyz " />
+				<Compiler>
+					<Add option="-fopenmp -march=native -Ofast" />
+				</Compiler>
+				<Linker>
+					<Add option="-ldl" />
+					<Add option="-fopenmp" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="2eints/IIC32.cpp" />
+		<Unit filename="2eints/IIC64K4.cpp" />
+		<Unit filename="2eints/IIC64MIRROR.cpp" />
+		<Unit filename="2eints/IICinit.cpp" />
+		<Unit filename="2eints/IICint.hpp" />
+		<Unit filename="2eints/VILIC.cpp" />
+		<Unit filename="2eints/VILIC.hpp" />
+		<Unit filename="2eints/quimera.cpp" />
+		<Unit filename="2eints/quimera.hpp" />
+		<Unit filename="basis/SPprototype.hpp" />
+		<Unit filename="basis/shellpair.hpp" />
+		<Unit filename="integrals/rotations.hpp" />
+		<Unit filename="libquimera/libquimera.cpp" />
+		<Unit filename="libquimera/libquimera.hpp" />
+		<Unit filename="low/cache.hpp" />
+		<Unit filename="low/cache32.hpp" />
+		<Unit filename="low/cache64.hpp" />
+		<Unit filename="low/chrono.hpp" />
+		<Unit filename="low/plotters.hpp" />
+		<Unit filename="math/affine.hpp" />
+		<Unit filename="math/angular.cpp" />
+		<Unit filename="math/angular.hpp" />
+		<Unit filename="math/gamma.cpp" />
+		<Unit filename="math/gamma.hpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

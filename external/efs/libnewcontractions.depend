@@ -1,0 +1,192 @@
+# depslib dependency file v1.0
+1361755850 source:/home/jaime/Desktop/fiesta-0.6/src/low/cache32.cpp
+	"cache32.hpp"
+
+1362056502 /home/jaime/Desktop/fiesta-0.6/src/low/cache32.hpp
+	<iostream>
+	<pmmintrin.h>
+	<xmmintrin.h>
+	"../low/cache.hpp"
+	"../low/cache64.hpp"
+
+1361758978 /home/jaime/Desktop/fiesta-0.6/src/low/cache.hpp
+	"../fiesta/defs.hpp"
+
+1361754598 /home/jaime/Desktop/fiesta-0.6/src/fiesta/defs.hpp
+
+1361755850 source:/home/jaime/Desktop/fiesta-0.6/src/low/cache64.cpp
+	"cache64.hpp"
+
+1361765964 /home/jaime/Desktop/fiesta-0.6/src/low/cache64.hpp
+	<iostream>
+	<pmmintrin.h>
+	<xmmintrin.h>
+	"../low/cache.hpp"
+
+1362056510 source:/home/jaime/Desktop/fiesta-0.6/src/integrals/newcontractions.cpp
+	"newcontractions.hpp"
+	"../integrals/rotations.hpp"
+
+1361865088 /home/jaime/Desktop/fiesta-0.6/src/integrals/newcontractions.hpp
+	"../low/cache32.hpp"
+	"../low/cache64.hpp"
+	"../fiesta/defs.hpp"
+
+1361883820 /home/jaime/Desktop/fiesta-0.6/src/integrals/rotations.hpp
+	"../fiesta/defs.hpp"
+	"../math/affine.hpp"
+	"../low/cache64.hpp"
+	"../low/cache32.hpp"
+
+1361133470 /home/jaime/Desktop/fiesta-0.6/src/math/affine.hpp
+	<cmath>
+	<iostream>
+
+1362590346 source:/home/jaime/Desktop/fiesta-0.6.x.backup.3/src/integrals/newcontractions.cpp
+	"newcontractions.hpp"
+	"../integrals/rotations.hpp"
+
+1362590346 /home/jaime/Desktop/fiesta-0.6.x.backup.3/src/integrals/newcontractions.hpp
+	"../low/cache32.hpp"
+	"../low/cache64.hpp"
+	"../fiesta/defs.hpp"
+
+1362590346 /home/jaime/Desktop/fiesta-0.6.x.backup.3/src/low/cache32.hpp
+	<iostream>
+	<pmmintrin.h>
+	<xmmintrin.h>
+	"../low/cache.hpp"
+	"../low/cache64.hpp"
+
+1362590346 /home/jaime/Desktop/fiesta-0.6.x.backup.3/src/low/cache.hpp
+	"../fiesta/defs.hpp"
+
+1362595002 /home/jaime/Desktop/fiesta-0.6.x.backup.3/src/fiesta/defs.hpp
+
+1362590346 /home/jaime/Desktop/fiesta-0.6.x.backup.3/src/low/cache64.hpp
+	<iostream>
+	<pmmintrin.h>
+	<xmmintrin.h>
+	"../low/cache.hpp"
+
+1362590346 /home/jaime/Desktop/fiesta-0.6.x.backup.3/src/integrals/rotations.hpp
+	"../fiesta/defs.hpp"
+	"../math/affine.hpp"
+	"../low/cache64.hpp"
+	"../low/cache32.hpp"
+
+1362590346 /home/jaime/Desktop/fiesta-0.6.x.backup.3/src/math/affine.hpp
+	<cmath>
+	<iostream>
+
+1362590346 source:/home/jaime/Desktop/fiesta-0.6.x/src/integrals/newcontractions.cpp
+	"newcontractions.hpp"
+	"../integrals/rotations.hpp"
+
+1362590346 /home/jaime/Desktop/fiesta-0.6.x/src/integrals/newcontractions.hpp
+	"../low/cache32.hpp"
+	"../low/cache64.hpp"
+	"../fiesta/defs.hpp"
+
+1362590346 /home/jaime/Desktop/fiesta-0.6.x/src/low/cache32.hpp
+	<iostream>
+	<pmmintrin.h>
+	<xmmintrin.h>
+	"../low/cache.hpp"
+	"../low/cache64.hpp"
+
+1362590346 /home/jaime/Desktop/fiesta-0.6.x/src/low/cache.hpp
+	"../fiesta/defs.hpp"
+
+1363360241 /home/jaime/Desktop/fiesta-0.6.x/src/fiesta/defs.hpp
+
+1362590346 /home/jaime/Desktop/fiesta-0.6.x/src/low/cache64.hpp
+	<iostream>
+	<pmmintrin.h>
+	<xmmintrin.h>
+	"../low/cache.hpp"
+
+1362590346 /home/jaime/Desktop/fiesta-0.6.x/src/integrals/rotations.hpp
+	"../fiesta/defs.hpp"
+	"../math/affine.hpp"
+	"../low/cache64.hpp"
+	"../low/cache32.hpp"
+
+1362590346 /home/jaime/Desktop/fiesta-0.6.x/src/math/affine.hpp
+	<cmath>
+	<iostream>
+
+1375373495 source:/home/jaime/fiesta/src/integrals/newcontractions.cpp
+	"newcontractions.hpp"
+	"../integrals/rotations.hpp"
+
+1375373495 /home/jaime/fiesta/src/integrals/newcontractions.hpp
+	"../low/cache32.hpp"
+	"../low/cache64.hpp"
+	"../fiesta/defs.hpp"
+
+1375373495 /home/jaime/fiesta/src/low/cache32.hpp
+	<iostream>
+	<pmmintrin.h>
+	<xmmintrin.h>
+	"../low/cache.hpp"
+	"../low/cache64.hpp"
+
+1375368854 /home/jaime/fiesta/src/low/cache.hpp
+	"../fiesta/defs.hpp"
+
+1375373495 /home/jaime/fiesta/src/fiesta/defs.hpp
+
+1375373495 /home/jaime/fiesta/src/low/cache64.hpp
+	<iostream>
+	<pmmintrin.h>
+	<xmmintrin.h>
+	"../low/cache.hpp"
+
+1375373495 /home/jaime/fiesta/src/integrals/rotations.hpp
+	"../fiesta/defs.hpp"
+	"../math/affine.hpp"
+	"../low/cache64.hpp"
+	"../low/cache32.hpp"
+
+1375368858 /home/jaime/fiesta/src/math/affine.hpp
+	<cmath>
+	<iostream>
+
+1377701888 source:/home/jaime/dalton/external/k4mirror/integrals/newcontractions.cpp
+	"newcontractions.hpp"
+	"../integrals/rotations.hpp"
+
+1377701888 /home/jaime/dalton/external/k4mirror/integrals/newcontractions.hpp
+	"../low/cache32.hpp"
+	"../low/cache64.hpp"
+	"../fiesta/defs.hpp"
+
+1377701888 /home/jaime/dalton/external/k4mirror/low/cache32.hpp
+	<iostream>
+	<pmmintrin.h>
+	<xmmintrin.h>
+	"../low/cache.hpp"
+	"../low/cache64.hpp"
+
+1377701888 /home/jaime/dalton/external/k4mirror/low/cache.hpp
+	"../fiesta/defs.hpp"
+
+1378096145 /home/jaime/dalton/external/k4mirror/fiesta/defs.hpp
+
+1377701888 /home/jaime/dalton/external/k4mirror/low/cache64.hpp
+	<iostream>
+	<pmmintrin.h>
+	<xmmintrin.h>
+	"../low/cache.hpp"
+
+1377701888 /home/jaime/dalton/external/k4mirror/integrals/rotations.hpp
+	"../fiesta/defs.hpp"
+	"../math/affine.hpp"
+	"../low/cache64.hpp"
+	"../low/cache32.hpp"
+
+1377701888 /home/jaime/dalton/external/k4mirror/math/affine.hpp
+	<cmath>
+	<iostream>
+

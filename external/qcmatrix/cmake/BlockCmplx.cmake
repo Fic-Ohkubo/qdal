@@ -1,0 +1,39 @@
+# Source codes for square block complx matrix
+SET(QCMATRIX_SRCS
+    ${QCMATRIX_SRCS}
+    ${LIB_QCMATRIX_PATH}/src/qcmat/QcMatCreate.c
+    ${LIB_QCMATRIX_PATH}/src/qcmat/QcMatBlockCreate.c
+    ${LIB_QCMATRIX_PATH}/src/qcmat/QcMatSetSymType.c
+    ${LIB_QCMATRIX_PATH}/src/qcmat/QcMatSetDataType.c
+    ${LIB_QCMATRIX_PATH}/src/qcmat/QcMatSetDimMat.c
+    ${LIB_QCMATRIX_PATH}/src/qcmat/QcMatAssemble.c
+    ${LIB_QCMATRIX_PATH}/src/qcmat/QcMatGetDimBlock.c
+    ${LIB_QCMATRIX_PATH}/src/qcmat/QcMatGetSymType.c
+    ${LIB_QCMATRIX_PATH}/src/qcmat/QcMatGetDataType.c
+    ${LIB_QCMATRIX_PATH}/src/qcmat/QcMatGetDimMat.c
+    ${LIB_QCMATRIX_PATH}/src/qcmat/QcMatIsAssembled.c
+    ${LIB_QCMATRIX_PATH}/src/qcmat/QcMatSetValues.c
+    ${LIB_QCMATRIX_PATH}/src/qcmat/QcMatAddValues.c
+    ${LIB_QCMATRIX_PATH}/src/qcmat/QcMatGetValues.c
+    ${LIB_QCMATRIX_PATH}/src/qcmat/QcMatDuplicate.c
+    ${LIB_QCMATRIX_PATH}/src/qcmat/QcMatZeroEntries.c
+    ${LIB_QCMATRIX_PATH}/src/qcmat/QcMatGetTrace.c
+    ${LIB_QCMATRIX_PATH}/src/qcmat/QcMatGetMatProdTrace.c
+    ${LIB_QCMATRIX_PATH}/src/qcmat/QcMatDestroy.c
+    ${LIB_QCMATRIX_PATH}/src/qcmat/QcMatScale.c
+    ${LIB_QCMATRIX_PATH}/src/qcmat/QcMatAXPY.c
+    ${LIB_QCMATRIX_PATH}/src/qcmat/QcMatTranspose.c
+    ${LIB_QCMATRIX_PATH}/src/qcmat/QcMatGEMM.c
+    ${LIB_QCMATRIX_PATH}/src/qcmat/QcMatIsDiagonal.c)
+IF(QCMATRIX_STORAGE_MODE)
+    SET(QCMATRIX_SRCS
+        ${QCMATRIX_SRCS}
+        ${LIB_QCMATRIX_PATH}/src/qcmat/QcMatSetStorageMode.c
+        ${LIB_QCMATRIX_PATH}/src/qcmat/QcMatGetStorageMode.c)
+ENDIF()
+IF(QCMATRIX_ENABLE_VIEW)
+    SET(QCMATRIX_SRCS
+        ${QCMATRIX_SRCS}
+        ${LIB_QCMATRIX_PATH}/src/qcmat/QcMatWrite.c
+        ${LIB_QCMATRIX_PATH}/src/qcmat/QcMatRead.c)
+ENDIF()
