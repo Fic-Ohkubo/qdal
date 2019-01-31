@@ -1,2 +1,0 @@
-For some header files, it is better that they are named as "qcmatrix_...",
-so that they may not have the same names as other libraries.

@@ -1,8 +1,0 @@
-    ! reads/writes a matrix in file using ASCII or binary format
-#if defined(QCMATRIX_64BIT_INTEGER)
-    integer(kind=8), parameter :: BINARY_VIEW = 0
-    integer(kind=8), parameter :: ASCII_VIEW = 1
-#else
-    integer(kind=4), parameter :: BINARY_VIEW = 0
-    integer(kind=4), parameter :: ASCII_VIEW = 1
-#endif

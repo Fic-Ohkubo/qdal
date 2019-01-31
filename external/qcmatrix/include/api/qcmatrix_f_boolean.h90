@@ -1,8 +1,0 @@
-    ! Boolean types
-#if defined(QCMATRIX_64BIT_INTEGER)
-    integer(kind=8), parameter :: QFALSE = 0
-    integer(kind=8), parameter :: QTRUE = 1
-#else
-    integer(kind=4), parameter :: QFALSE = 0
-    integer(kind=4), parameter :: QTRUE = 1
-#endif
