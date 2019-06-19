@@ -1,5 +1,0 @@
-pytest
-cffi
-pycodestyle
-cpp-coveralls
-pyyaml

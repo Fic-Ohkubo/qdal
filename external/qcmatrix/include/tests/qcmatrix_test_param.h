@@ -1,8 +1,0 @@
-#if !defined(QCMATRIX_TEST_PARAM_H)
-#define QCMATRIX_TEST_PARAM_H
-
-#define MAX_DIM_BLOCK 6
-#define MAX_DIM_MAT 600
-#define CF_THRESHOLD 1000.0*QZEROTHRSH
-
-#endif
